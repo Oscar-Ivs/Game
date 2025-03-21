@@ -1,0 +1,27 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.game-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 5px;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.game-grid div {
+    background-color: lightgray;
+    border: 1px solid #ccc;
+    width: 100%;
+    padding-bottom: 100%; /* Makes the grid square */
+    position: relative;
+}
+
+.game-grid div.active {
+    background-color: red;
+}
+
+.game-grid div:hover {
+    cursor: pointer;
+}
